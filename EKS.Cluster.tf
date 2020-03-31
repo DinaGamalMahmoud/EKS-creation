@@ -1,3 +1,7 @@
+provider "aws" {
+  version = "~> 2.55"
+  region  = "us-east-2"
+}
 resource "aws_iam_role" "demo-node" {
   name = "terraform-eks-demo-cluster"
 
